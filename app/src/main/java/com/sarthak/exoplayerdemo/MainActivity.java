@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         time = findViewById(R.id.timee);
         duration = findViewById(R.id.durationnn);
         setupPlayer();
-        setTime();
         final Button button = findViewById(R.id.btn_pauseee);
         ImageButton button1 = findViewById(R.id.btn_ffwddd);
         ImageButton button2 = findViewById(R.id.btn_prev);
@@ -138,7 +137,8 @@ public class MainActivity extends AppCompatActivity {
                 null);
 
         simpleExoPlayer.prepare(mediaSource);//Local
-        simpleExoPlayer.setPlayWhenReady(true);//Local
+        //simpleExoPlayer.setPlayWhenReady(true);//Local
+        //setTime();
     }
 
     @Override
